@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sight Unheard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div id="player"></div>
+    <div id="overlay" class="fade-out">
+      <section id="top">
+        <h1 id="siteTitle">SIGHT UNHEARD</h1>
+        <div id="sub-title">
+          <h1 id="address" class="sub-titles white-hover"></h1>
+          <h1 id="artistName" class="sub-titles white-hover"></h1>
+        </div>
+      </section>
+      <img class="hidden" id="overlay-img" />
+      <section id="middle">
+        <nav class="nav-fillpath">
+          <!-- item1 item2 bunlar .html olmasi gereken isimler -->
+          <a class="prev" id="prev-city">
+            <span class="icon-wrap"></span>
+            <h3 id="prev-city-label"></h3>
+          </a>
+          <a class="prev" id="prevVideo">
+            <span class="icon-wrap"></span>
+          </a>
+          <a class="next" id="nextVideo">
+            <span class="icon-wrap"></span>
+          </a>
+          <a class="next" id="next-city">
+            <span class="icon-wrap"></span>
+            <h3 id="next-city-label"></h3>
+          </a>
+        </nav>
+      </section>
+      <section id="footer">
+        <div id="copyright">© 2022 by Sight Unheard</div>
+        <div id="middle">
+          <a class="white-hover" href="about.html">About</a>
+          <a class="white-hover" href="contact.html">Contact</a>
+          <a
+            class="white-hover"
+            href="https://www.instagram.com/sight.unheard/?hl=en"
+            target="_blank"
+          >
+            <i
+              class="fa fa-instagram btn sign"
+              aria-hidden="true"
+              style="color: white; font-size: 1.2em"
+            ></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="http://www.barbarosserter.com/"
+            target="_blank"
+            class="white-hover"
+            >Design by Barbaros</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <script src="./build/bundle.js"></script>
+  </body>
+</html>

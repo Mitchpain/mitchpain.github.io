@@ -1,0 +1,173 @@
+#overlay {
+  grid-template-rows: 20% 1fr 15%;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+#top {
+  margin: auto;
+  margin-top: 4rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#sub-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#address {
+  text-align: left;
+}
+
+#artistName {
+  text-align: right;
+}
+
+#artistName:hover {
+  opacity: 1;
+}
+
+.sub-titles {
+  font-size: 0.6rem;
+  margin-top: 12px;
+  letter-spacing: 0.2rem;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+#siteTitle {
+  font-weight: 100;
+  max-width: 100vw;
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+a:hover {
+  opacity: 1 !important;
+  text-decoration: underline;
+}
+
+.white-hover:hover {
+  opacity: 1 !important;
+}
+
+#footer {
+  width: 95%;
+  font-weight: 100;
+  margin: auto;
+  font-size: 12px;
+
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer a {
+  opacity: 0.5;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  margin: auto;
+}
+
+#copyright {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  opacity: 1 !important;
+  text-decoration: none;
+}
+
+#footer #middle {
+  width: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#prevVideo {
+  margin-left: 8%;
+  height: 5%;
+}
+
+#nextVideo {
+  margin-right: 8%;
+  height: 5%;
+}
+
+#overlay-img {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+@media only screen and (max-width: 750px) {
+  .fade-out {
+    opacity: 1;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+
+  #overlay {
+    grid-template-rows: 0% 1fr 15%;
+    bottom: 0;
+    top: unset;
+    height: 50%;
+  }
+
+  #siteTitle {
+    font-size: 2em;
+  }
+
+  #sub-title {
+    grid-template-columns: unset;
+    justify-content: center;
+  }
+
+  #artistName {
+    text-align: left;
+  }
+
+  #prev-city {
+    height: 20%;
+  }
+
+  #next-city {
+    height: 20%;
+  }
+
+  #prevVideo {
+    height: 10%;
+  }
+
+  #nextVideo {
+    height: 10%;
+  }
+
+  nav a {
+    top: 70% !important;
+  }
+  #footer #middle {
+    width: unset;
+  }
+}

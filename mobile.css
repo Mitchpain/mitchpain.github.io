@@ -1,0 +1,47 @@
+#overlay {
+  grid-template-rows: 1fr 5%;
+  bottom: 0;
+  top: unset;
+  height: 50%;
+}
+
+#siteTitle {
+  font-size: 2em;
+}
+
+#sub-title {
+  grid-template-columns: unset;
+  justify-content: center;
+}
+
+#artistName {
+  text-align: left;
+}
+
+#middle {
+  display: none;
+}
+
+#prev-city {
+  height: 20%;
+}
+
+#next-city {
+  height: 20%;
+}
+
+#prevVideo {
+  height: 10%;
+}
+
+#nextVideo {
+  height: 10%;
+}
+
+nav a {
+  top: 70% !important;
+}
+
+#footer #middle {
+  width: unset;
+}
