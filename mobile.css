@@ -1,41 +1,13 @@
 #overlay {
   grid-template-rows: 1fr 5%;
   bottom: 0;
-  top: unset;
   height: 50%;
+  position: absolute;
+  top: 25%;
 }
 
-#siteTitle {
-  font-size: 2em;
-}
-
-#sub-title {
-  grid-template-columns: unset;
-  justify-content: center;
-}
-
-#artistName {
-  text-align: left;
-}
-
-#middle {
+#middle-section {
   display: none;
-}
-
-#prev-city {
-  height: 20%;
-}
-
-#next-city {
-  height: 20%;
-}
-
-#prevVideo {
-  height: 10%;
-}
-
-#nextVideo {
-  height: 10%;
 }
 
 nav a {
@@ -44,4 +16,40 @@ nav a {
 
 #footer #middle {
   width: unset;
+}
+
+@media screen and (orientation: portrait) {
+  #overlay {
+    grid-template-rows: 1fr 10%;
+    top: unset;
+    bottom: 0;
+  }
+
+  #footer {
+    font-size: 1.5em;
+  }
+
+  #siteTitle {
+    font-size: 9em;
+    text-align: center;
+    font-weight: 100;
+  }
+  #sub-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0.9em;
+    opacity: 0.5;
+  }
+}
+@media screen and (orientation: landscape) {
+  .fade-out {
+    opacity: 0;
+    transition: opacity 2s linear;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
 }
