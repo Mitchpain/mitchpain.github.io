@@ -20,13 +20,24 @@ nav a {
 
 @media screen and (orientation: portrait) {
   #overlay {
-    grid-template-rows: 1fr 10%;
+    grid-template-rows: 1fr 20%;
     top: unset;
     bottom: 0;
   }
 
   #footer {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-align: center;
+    display: grid;
+    grid-column-gap: 5%;
+    opacity: 0.5;
+  }
+
+  #footer #middle {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
   }
 
   #siteTitle {
@@ -38,8 +49,12 @@ nav a {
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
-    font-size: 0.9em;
+    font-size: 1.1em;
     opacity: 0.5;
+  }
+
+  #footer a {
+    text-decoration: none;
   }
 }
 @media screen and (orientation: landscape) {
