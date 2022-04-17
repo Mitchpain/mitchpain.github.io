@@ -2,16 +2,6 @@
   grid-template-rows: 20% 1fr 15%;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 2s linear;
-}
-
-.fade-in {
-  opacity: 1;
-  transition: opacity 2s linear;
-}
-
 #top {
   margin: auto;
   margin-top: 4rem;
@@ -111,6 +101,15 @@ a:hover {
   height: 5%;
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
 #overlay-img {
   position: absolute;
   top: 2%;
