@@ -73,41 +73,60 @@ nav a {
     text-decoration: none;
   }
 
-  /*ESSAI
-  .nav-fillpath a:hover .icon-wrap::before,
-  .nav-fillpath a:hover .icon-wrap::after {
-    height: unset;
+  #overlay-img {
+    position: fixed;
+    top: 4%;
+    left: 4%;
+  }
+
+  .icon-wrap {
+    display: none !important;
   }
 
   .nav-fillpath a:hover::before,
   .nav-fillpath a:hover .icon-wrap::before {
-    -webkit-transform: unset;
-    transform: unset;
+    transform: translateX(-50%) rotate(-135deg);
   }
 
-  .nav-fillpath a.next:hover::before,
-  .nav-fillpath a.next:hover .icon-wrap::before {
-    -webkit-transform: unset;
-    transform: unset;
-  }
-
-  .nav-fillpath a:hover::after,
-  .nav-fillpath a:hover .icon-wrap::after {
-    -webkit-transform: unset;
-    transform: unset;
+  .nav-fillpath a::after,
+  .nav-fillpath .icon-wrap::after {
+    -webkit-transform: translateX(-50%) rotate(-55deg);
+    transform: translateX(-50%) rotate(-55deg);
   }
 
   .nav-fillpath a.next:hover::after,
   .nav-fillpath a.next:hover .icon-wrap::after {
-    -webkit-transform: unset;
-    transform: unset;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+
+  .nav-fillpath a.next:hover::before,
+  .nav-fillpath a.next:hover .icon-wrap::before {
+    -webkit-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+  .nav-fillpath a.prev h3 {
+    margin-left: 25%;
+    font-size: 1.3em;
+    opacity: 0.5 !important;
+  }
+
+  .nav-fillpath a.next h3 {
+    margin-right: 25%;
+    font-size: 1.3em;
+    opacity: 0.5 !important;
   }
 
   .nav-fillpath a:hover h3 {
     opacity: 1;
     -webkit-transform: unset;
     transform: unset;
-  }*/
+  }
 }
 @media screen and (orientation: landscape) {
 }
